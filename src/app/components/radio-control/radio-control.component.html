@@ -1,0 +1,8 @@
+<div class="radio-button-container" [class.ng-has-value]="hasValue">
+
+	<div  class="ng-value" >
+		<button *ngFor="let item of _items" class="btn btn-success" (click)="select(item)">{{item.label}}</button>
+	</div>
+</div>
+
+{{selectedValues}}

@@ -1,0 +1,23 @@
+<div class="btn-group btn-group-lg">
+
+	<button 
+		type="button" 
+		class="btn btn-secondary"
+		[disabled]="disabled" 
+		[class.active]="isActive('low')"
+		(click)="setLevel('low')">Low</button>
+
+	<button 
+		type="button" 
+		class="btn btn-secondary"
+		[disabled]="disabled"
+		[class.active]="isActive('medium')"
+		(click)="setLevel('medium')">Medium</button>
+
+	<button 
+		type="button" 
+		class="btn btn-secondary"
+		[disabled]="disabled"
+		[class.active]="isActive('high')"
+		(click)="setLevel('high')">High</button> 
+</div>
