@@ -22,6 +22,7 @@ export class AppComponent implements OnInit{
   		email : ['', [Validators.required, Validators.email]],
   		level: ['low', [Validators.required]]
   	});
+    this.initForm2();
   }
 
 
@@ -31,5 +32,18 @@ export class AppComponent implements OnInit{
 
   submit(form : NgForm){
     console.log(form.value);
+  }
+  
+  
+  initForm2(){
+    this.form2 = this.fb.group({
+      items : ItemsFormArrayComponent.buildItems()
+    });
+
+    
+  }
+
+  submit2(form){
+    console.log(form)
   }
 }
