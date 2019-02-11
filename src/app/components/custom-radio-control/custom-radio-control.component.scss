@@ -1,0 +1,15 @@
+.radio-buttons{
+
+    & .btn.radio-button{
+        margin-right: 5px;
+        padding: 0.3rem 0.45rem;
+        font-size: 0.7rem;
+        line-height: 1.5rem;
+        
+        &.active{
+            background: #5D9E79 !important;
+            color: white;
+            box-shadow: 0 0 0 0.1rem rgba(207, 211, 213, 0.3) !important;
+        }
+    }
+}    
