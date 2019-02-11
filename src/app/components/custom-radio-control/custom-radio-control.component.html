@@ -1,0 +1,6 @@
+<div class="radio-buttons">
+        <ng-container *ngIf="items.length >0">
+            <button class="btn btn-light radio-button" (click)="selectItem(item)" [class.active]="isActive(item)" *ngFor="let item of items">{{item.label}}</button>
+        </ng-container>
+</div>
+      
