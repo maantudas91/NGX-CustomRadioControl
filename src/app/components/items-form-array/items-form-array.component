@@ -1,0 +1,8 @@
+<fieldset>
+  <h6>Items</h6>
+  <item-control
+    *ngFor="let item of itemsFormArray.controls; let i=index"
+    [index]="i" [item]="item" (removed)="itemsFormArray.removeAt($event)">
+  </item-control>
+  <button (click)="addItem()">Add item</button>
+</fieldset>
