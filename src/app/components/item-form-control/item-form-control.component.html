@@ -1,0 +1,15 @@
+<div class="form-group row" [formGroup]="item">
+  <div class="col-sm-6">
+    <label [attr.for]="'name'+index">Name</label>
+    <input type="text" class="form-control"
+           [attr.id]="'name'+index" formControlName="name">
+  </div>
+  <div class="col-sm-5">
+    <label [attr.for]="'quantity'+index">Quantity</label>
+    <input type="number" class="form-control"
+           [attr.id]="'quantity'+index" formControlName="quantity">
+  </div>
+  <div class="col-sm-1 py-1">
+    <button type="button" class="btn" (click)="removed.emit(index)">-</button>
+  </div>
+</div>
